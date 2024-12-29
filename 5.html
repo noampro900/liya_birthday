@@ -1,89 +1,76 @@
-
 <html>
- <head>
-   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HAPPY BIRTHDAY</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
-    #countdown {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    #redirectButton {
-      display: none;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    #redirectButton:hover {
-      background-color: #45a049;
-    }
-  </style>
- </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #redirectButton {
+        display: none;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #redirectButton:hover {
+        background-color: #45a049;
+      }
+      iframe {
+    width: 100%;
+    height: 600px;
+    border: 5px solid pink; /* Add a pink border */
+    border-radius: 10px; /* Optional: make the corners rounded */
+      }
+      
+</style>
+    </style>
+  </head>
   <body>
-    
-  <h1>Countdown Timer</h1>
-  <div id="countdown"></div>
-  <button id="redirectButton">Go to the link</button>
+    <h1>יום הולדת שמח ליה!</h1>
+    <div id="iframeContainer">
+      <iframe src="https://noampro900.github.io/liya_birthday/Clocko.html" title="Embedded Content"></iframe>
+    </div>
 
-  <script>
-    // Set the countdown dates
-    const targetDate = new Date('January 21, 2024 08:41:15').getTime();
-    const buttonStart = new Date('January 20, 2024 21:57:50').getTime();
-    const buttonEnd = new Date('January 21, 2024 13:00:01').getTime();
+    <button id="redirectButton">Go to the link</button>
 
-    const redirectUrl = 'https://example.com';  // Add your URL here
+    <script>
+      // Set the countdown button time range
+      const buttonStart = new Date('January 20, 2024 21:57:50').getTime();
+      const buttonEnd = new Date('January 21, 2024 13:00:01').getTime();
 
-    const countdownElement = document.getElementById('countdown');
-    const button = document.getElementById('redirectButton');
+      const button = document.getElementById('redirectButton');
 
-    function updateCountdown() {
-      const now = new Date().getTime();
-      let distance;
-
-      if (now >= buttonStart && now <= buttonEnd) {
-        // Show button during the specified time period
-        button.style.display = 'inline-block';
-      } else {
-        // Hide button outside the specified time period
-        button.style.display = 'none';
+      function checkButtonVisibility() {
+        const now = new Date().getTime();
+        if (now >= buttonStart && now <= buttonEnd) {
+          // Show button during the specified time period
+          button.style.display = 'inline-block';
+        } else {
+          // Hide button outside the specified time period
+          button.style.display = 'none';
+        }
       }
 
-      // Update the countdown timer
-      if (now > targetDate) {
-        // Loop the countdown when it has passed
-        distance = targetDate + (1000 * 60 * 60 * 24 * 365) - now;  // Add a year if passed
-      } else {
-        distance = targetDate - now;
-      }
+      // Button redirection
+      button.addEventListener('click', () => {
+        window.location.href = 'https://example.com';  // Redirect to this URL
+      });
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Check button visibility every second
+      setInterval(checkButtonVisibility, 1000);
+    </script>
 
-      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-
-    // Button redirection
-    button.addEventListener('click', () => {
-      window.location.href = https://www.thesprucepets.com/thmb/tu1I1b1_2KHdv_-jC1Y_HmpkXTE=/1080x0/filters:no_upscale():strip_icc()/27579948_547443672291161_4754606380961234944_n-5a70c2ac31283400364b124b.jpg;
-    });
-
-    // Update countdown every second
-    setInterval(updateCountdown, 1000);
-  </script>
-
+   
 <div>תמונות של ליה:</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimF4FjlTFnx9GkitrBeh5ZywAU5R2WVNgTdfuR7AWNnpVJTub1RqJcpBaWRhx2u9jhpVUDRHWa2dqup05KPKMThJnVDmjK3w8WUl_5MaxlEsn1ZL685tyQva4Rfi8SpXuDxcZwj9D0UBMVWy8lGrHfdbw3tlqz5zgXW697E82zBBkMd-LFiBXXQnu3J1U/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.48.jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimF4FjlTFnx9GkitrBeh5ZywAU5R2WVNgTdfuR7AWNnpVJTub1RqJcpBaWRhx2u9jhpVUDRHWa2dqup05KPKMThJnVDmjK3w8WUl_5MaxlEsn1ZL685tyQva4Rfi8SpXuDxcZwj9D0UBMVWy8lGrHfdbw3tlqz5zgXW697E82zBBkMd-LFiBXXQnu3J1U/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.48.jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-KhsHJAx9hG5K84q4F91hRGwFv07hEG-o0yN2nmswu52ucRhaV3UhFGjNGljHZUPBLiMmz1eVMhebOvhv60X-2wojhi0HU5au7aq8rK5-wJRyZF6L4AeuNmMdsQ3wGIGQXLio5mg7eHxQdV_HcaEvNGVspKPam4JzQdLG6jbg6aDSMhGDxw931j3FD2A/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.49.jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-KhsHJAx9hG5K84q4F91hRGwFv07hEG-o0yN2nmswu52ucRhaV3UhFGjNGljHZUPBLiMmz1eVMhebOvhv60X-2wojhi0HU5au7aq8rK5-wJRyZF6L4AeuNmMdsQ3wGIGQXLio5mg7eHxQdV_HcaEvNGVspKPam4JzQdLG6jbg6aDSMhGDxw931j3FD2A/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.49.jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5wTneFGqBbtPy5g6shkYFP_mqV-l2PLDygLU-hpNVPdmFDi2kYnVw4lL1DhlYmEP6HnUfDUMUd5TKi9eaVI1LMWYRKdOGLeNYK0zRlFM9D9Kl4fQxAxtlsdmcq3JvpMiJ2r9C_soImqQheOM-k75Zwrz909dbai74fBkiEvckBt2iDbL-0EhInNMU6_w/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.52.jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1202" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5wTneFGqBbtPy5g6shkYFP_mqV-l2PLDygLU-hpNVPdmFDi2kYnVw4lL1DhlYmEP6HnUfDUMUd5TKi9eaVI1LMWYRKdOGLeNYK0zRlFM9D9Kl4fQxAxtlsdmcq3JvpMiJ2r9C_soImqQheOM-k75Zwrz909dbai74fBkiEvckBt2iDbL-0EhInNMU6_w/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.52.jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOxx9G4pOrSMzZmh3Qpi_1NuezPmJ-3_l9CeQJcpDwYk4EeY3WGD0npzDnYuz0T0KU6KPJ0kkE6V0P2RqcuxW_IRzCm5_ZUFkWAu1zjBGdj95mK-m6NETvZcghFk2hh4GU-1tI9m_DQ-vXYF3bgZcec2-d63awhDGNZYoupbvGUxIQWDTV4l4AD2Ju6gQ/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.53%20(1).jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOxx9G4pOrSMzZmh3Qpi_1NuezPmJ-3_l9CeQJcpDwYk4EeY3WGD0npzDnYuz0T0KU6KPJ0kkE6V0P2RqcuxW_IRzCm5_ZUFkWAu1zjBGdj95mK-m6NETvZcghFk2hh4GU-1tI9m_DQ-vXYF3bgZcec2-d63awhDGNZYoupbvGUxIQWDTV4l4AD2Ju6gQ/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.53%20(1).jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiURowiuCx4r_cLzrJjidQTnizXhyVIxYR-NN26VEq_LODS1jhQcmB7FS6RNQfT_NGExrw__xavzMZ6Z8ABfaoddtiFkEnvdQDjjk1mg2mod67M6yJCVrYamzLznfd2eprDRAqEmYzDt0b6qam_tWo1qitrMRumXjhK438SgsrP5uLqzNUQmsxVP_4UvNU/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.53%20(2).jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiURowiuCx4r_cLzrJjidQTnizXhyVIxYR-NN26VEq_LODS1jhQcmB7FS6RNQfT_NGExrw__xavzMZ6Z8ABfaoddtiFkEnvdQDjjk1mg2mod67M6yJCVrYamzLznfd2eprDRAqEmYzDt0b6qam_tWo1qitrMRumXjhK438SgsrP5uLqzNUQmsxVP_4UvNU/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.53%20(2).jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBwga7r8ZIRsOLb7Sh0R6I7lQe28J3vCsr4-ItuDg-fTWp1Ri_XVL2CBv1pVAlfmNTmSOBQp5EKWEaAACYaGuTTKfr8UYFcI9jzuhmAdQfLZugt_A2-1r6mGAigVBIK3Uly17Elu6LAmxKZavF_L44fdmWJCAQkw-ktQ3pFvT7zIRBfXsBHC3zKqwUPpk/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.53.jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBwga7r8ZIRsOLb7Sh0R6I7lQe28J3vCsr4-ItuDg-fTWp1Ri_XVL2CBv1pVAlfmNTmSOBQp5EKWEaAACYaGuTTKfr8UYFcI9jzuhmAdQfLZugt_A2-1r6mGAigVBIK3Uly17Elu6LAmxKZavF_L44fdmWJCAQkw-ktQ3pFvT7zIRBfXsBHC3zKqwUPpk/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.53.jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqV6rNiAr3vxBFrGE-ymKLHKuxlhyphenhyphent6X5XsrO61Q-2k3rGMCpiUyv8NVhIhFZVF2cVqqSVhhKfN5BxqJmX66kdiF8IeJyBV_QimP_6idZX1QH_ySHQpy55B1eAVMMGgdfHJaViVi12EsYRsdrVBRHr8PrB_lItbPUYnhCrzgI07-sSi_yBtKSOGLPH0ls/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.54%20(1).jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1200" data-original-width="1600" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqV6rNiAr3vxBFrGE-ymKLHKuxlhyphenhyphent6X5XsrO61Q-2k3rGMCpiUyv8NVhIhFZVF2cVqqSVhhKfN5BxqJmX66kdiF8IeJyBV_QimP_6idZX1QH_ySHQpy55B1eAVMMGgdfHJaViVi12EsYRsdrVBRHr8PrB_lItbPUYnhCrzgI07-sSi_yBtKSOGLPH0ls/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.54%20(1).jpeg" width="320"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLtaGfp2P71GNnmfZg_zOCVCYjXM6HQnwyJFcrJ1NmW_gwMpEcZHB7qeV42gwOcsKO3KeEypPH4MCgFVtKMp6ONW_aOqXWDI1Y9yVB8MvKVYNoraWmm7WH5ofYG8rttV8UhhC_VXPvCL792APdOXokqhWP15FH4Jg7EIoNogWbhQUMTMKlfFB8W9vU1dg/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.54%20(2).jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLtaGfp2P71GNnmfZg_zOCVCYjXM6HQnwyJFcrJ1NmW_gwMpEcZHB7qeV42gwOcsKO3KeEypPH4MCgFVtKMp6ONW_aOqXWDI1Y9yVB8MvKVYNoraWmm7WH5ofYG8rttV8UhhC_VXPvCL792APdOXokqhWP15FH4Jg7EIoNogWbhQUMTMKlfFB8W9vU1dg/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.54%20(2).jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzzzmitNtfXOc1uRr3bWaHTQTjutK6xK8bwu1FcSZFk__W7C1-KluFpTw6MHX6lh8hsVLYPw58Nr-RymxqX7muy7FCyoDcptLV1b_CSslODU2De8sPxs9rdD01w2f0WyxlA8gajnVmc0LGNQYrzCyS6CEAs-StvnQNplNRxiATDnA0DVfUXn15RIfn-j4/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.54%20(3).jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzzzmitNtfXOc1uRr3bWaHTQTjutK6xK8bwu1FcSZFk__W7C1-KluFpTw6MHX6lh8hsVLYPw58Nr-RymxqX7muy7FCyoDcptLV1b_CSslODU2De8sPxs9rdD01w2f0WyxlA8gajnVmc0LGNQYrzCyS6CEAs-StvnQNplNRxiATDnA0DVfUXn15RIfn-j4/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.54%20(3).jpeg" width="240"></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyIFeXs7ediUY-HtGPbST2-pGBLRemwKzKRaBhdZlvmzCohkNEx5BMHElZDB0XdaVZDNrJjsMg26H_dhOPHa3IZBDccZeF_TFOsjtyQltv_EJqZFR0PjM_i5oix1hBRCoplw-npDvc1xVdiDf3bSOEqMfY_rmdzpVfk-gz4nzOE7jsJAXw9iTJk5-fSJo/s1600/WhatsApp%20Image%202023-12-22%20at%2015.52.54.jpeg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1200" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyIFeXs7ediUY-HtGPbST2-pGBLRemwKzKRaBhdZlvmzCohkNEx5BMHElZDB0XdaVZDNrJjsMg26H_dhOPHa3IZBDccZeF_TFOsjtyQltv_EJqZFR0PjM_i5oix1hBRCoplw-npDvc1xVdiDf3bSOEqMfY_rmdzpVfk-gz4nzOE7jsJAXw9iTJk5-fSJo/s320/WhatsApp%20Image%202023-12-22%20at%2015.52.54.jpeg" width="240"></a></div><br><div>" טאדאם זה הולך להיות פנטנסי " - מהפסטיגל שהתבטל בגלל המלחמה</div><div><br></div><div><br></div><div><br></div><div><br></div>
 
+
+      </a>
+    </div>
   </body>
 </html>
